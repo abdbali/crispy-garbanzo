@@ -1,0 +1,115 @@
+7
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınıf Listesi</title>
+    <style>
+        /* Genel Stil */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: radial-gradient(circle, #ff7e5f, #feb47b);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            color: white;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1::before {
+            content: "📋 ";
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            position: relative;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        li::before {
+            content: "👤 ";
+            position: absolute;
+            left: 10px;
+        }
+
+        li::after {
+            content: "✓";
+            position: absolute;
+            right: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #feb47b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sınıf Listesi</h1>
+    </header>
+    <main>
+        <ul>
+            <li>Elifnur Oğuzcan</li>
+            <li>Rabia Özay</li>
+            <li>Zeynep Melike Eryürek</li>
+            <li>Ayşenaz Unutulmaz</li>
+            <li>İkra Gürsoy</li>
+            <li>Buğlem Baş</li>
+            <li>Haticenur Ceylan</li>
+        </ul>
+    </main>
+    <footer>
+        Hazırlayan: <a href="#">[İsminiz]</a>
+    </footer>
+</body>
+</html>
